@@ -1,14 +1,21 @@
 import React from 'react';
 
-export default function SampleComponent() {
+export  function SampleComponent() {
   let styleObj = {
-    backgroungColor: bgColor,
+    backgroungColor: bgcolor,
   };
   let obj = {
     name: 'mehul',
   };
   let arr = [1, 2, 3, 4, 5, 6];
-  let arr2 = [<p>1</p>, <p>2</p>, <p>3</p>, <p>4</p>, <p>5</p>, <p>6</p>];
+  let arr2 = [
+    <p>1</p>, 
+    <p>2</p>, 
+    <p>3</p>, 
+    <p>4</p>, 
+    <p>5</p>, 
+    <p>6</p>
+  ];
   return (
     <>
       <div style={styleObj}>Heading</div>

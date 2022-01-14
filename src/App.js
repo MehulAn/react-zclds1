@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
-import { SampleComponent } from './SampleComponent';
+// import { SampleComponent } from './SampleComponent';
+import Todo from "./Todo"
 
 export default function App() {
   return (
@@ -9,8 +10,9 @@ export default function App() {
         <h1>Hello StackBlitz!</h1>
         <p>Start editing to see some magic happen :)</p>
       </div>
-      <SampleComponent bgCcolor="voilet" a={10} b={20} />
-      <SampleComponent bgColor="blue" a={10} b={20} />
+      {/* <SampleComponent bgCcolor="voilet" a={10} b={20} />
+      <SampleComponent bgColor="blue" a={10} b={20} /> */}
+      <Todo />
     </>
   );
 }
