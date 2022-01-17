@@ -8,22 +8,21 @@ export default function comp(){
   // v1
   useEffect (()=>{
     console.log("render")
-  })
+  });
   // v2
   useEffect (()=>{
     console.log('runs only once after first render');
     return()=>{
-      console.log("unmount")
-    }
+      
   }, []);
   // v3
   useEffect(()=>{
     console.log ("runs when the dependency array state changes");
+  }, [count]);
+  
+  // v4
+  useEffect(()=>{
+    return()=>{
+      console.log
+    }
   })
-return (
-  <div>
-    <button onClick = { () => setCount(count -1)}>-</button>
-    {count}
-    <button onClick = { () => setCount(count +1)}>+</button>
-  </div>
-)

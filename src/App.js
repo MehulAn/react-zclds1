@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Style.css';
+import './style.css';
 import Comp from './Comp';
 
 export default function App() {
-  const [flsg, setFlag] = useState(true);
+  const [flag, setFlag] = useState(true);
 
   return (
     <>
@@ -12,3 +12,4 @@ export default function App() {
     </>
   );
 }
+// export default App();
