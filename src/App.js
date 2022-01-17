@@ -1,21 +1,14 @@
-import React from 'react';
-import './style.css';
-import Home from './Components/Home';
-import AboutUs from './Components/AboutUs';
-import Contact from './Components/Contact';
-import Navbar from './Components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import './Style.css';
+import Comp from './Comp';
 
 export default function App() {
+  const [flsg, setFlag] = useState(true);
+
   return (
-    <div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<AboutUs />} />
-        </Routes>
-      </Router>
-    </div>
+    <>
+      <button onClick={() => setFlag(!flag)}>Switch</button>
+      {flag && <comp />}
+    </>
   );
 }
